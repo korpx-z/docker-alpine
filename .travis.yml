@@ -1,4 +1,4 @@
 arch: s390x
 services:
     - docker
-script: docker login quay.io $ROBOTUSER -p $ROBOTTOKEN && docker build -f s390x/Dockerfile --tag quay.io/ibmz/alpine:3.12 && docker push quay.io/ibmz/alpine:3.12
+script: docker login quay.io $ROBOT_USER -p $ROBOTTOKEN && cd s390x/Dockerfile && docker build . --tag quay.io/ibmz/alpine:3.12 && docker push quay.io/ibmz/alpine:3.12
