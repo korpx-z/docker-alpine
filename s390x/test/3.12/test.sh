@@ -5,7 +5,7 @@ export ANSI_GREEN="\e[32m"
 export ANSI_RESET="\e[0m"
 
 echo -e "\n $ANSI_YELLOW *** testing docker run - alpine *** $ANSI_RESET \n"
-
+#provoke build
 echo -e "$ANSI_YELLOW Display current directory: $ANSI_RESET"
 docker build . --tag local/alpine:3.12
 docker run --rm --name some-alpine local/alpine:3.12 pwd
