@@ -18,7 +18,7 @@
 Use like you would any other base image:
 
 ```dockerfile
-FROM quay.io/ibmz/alpine:3.7
+FROM quay.io/ibm/alpine:3.7
 RUN apk add --no-cache mysql-client
 ENTRYPOINT ["mysql"]
 ```
@@ -26,7 +26,7 @@ ENTRYPOINT ["mysql"]
 This example has a virtual image size of only 36.8MB. Compare that to our good friend Ubuntu:
 
 ```dockerfile
-FROM quay.io/ibmz/ubuntu:18.04
+FROM quay.io/ibm/ubuntu:18.04
 RUN apt-get update \
     && apt-get install -y --no-install-recommends mysql-client \
     && rm -rf /var/lib/apt/lists/*
