@@ -6,7 +6,7 @@ env:
     - TEST_DIR="$PWD/s390x/test/3.12/"
     - TEST_SCRIPT="test.sh"
     - BUILD_DIR="$PWD/s390x/"
-    - REPO="quay.io/ibmz/alpine"
+    - REPO="quay.io/ibm/alpine"
     - TAG="$REPO:3.12"
 before_script: 
   - cd $BUILD_DIR && chmod +x *
