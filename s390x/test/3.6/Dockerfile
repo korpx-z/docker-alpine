@@ -1,3 +1,3 @@
-FROM quay.io/ibmz/alpine:3.6
+FROM quay.io/ibm/alpine:3.6
 
 CMD []
