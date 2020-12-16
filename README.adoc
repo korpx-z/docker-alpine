@@ -3,7 +3,7 @@
 -    [original source code](https://github.com/alpinelinux/docker-alpine)
 
 ### Versions
-10, 11, 12, 13 (built within their respected branches ie: v3.12)
+6, 7, 8, 9, 10, 11, 12 (built within their respected branches ie: v3.12)
 
 # Alpine
 
